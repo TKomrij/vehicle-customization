@@ -32,9 +32,17 @@ namespace VehicleCustomization
             };
 
             fxs.Drive();
+            fxs.Turn("right");
+            fxs.Stop();
             modelS.Drive();
+            modelS.Turn("left");
+            modelS.Stop();
             mx410.Drive();
+            mx410.Turn("around");
+            mx410.Stop();
             model1500.Drive();
+            model1500.Turn("upside-down");
+            model1500.Stop();
         }
     }
 }

@@ -16,5 +16,10 @@ namespace VehicleCustomization
             Console.Write($"The {MainColor} Cessna drives past. ");
             Console.WriteLine("Zoooooom! Cessssnnnnaaaa!");
         }
+
+        public override void Stop()
+        {
+            Console.WriteLine("The vehicle gently rolls to a stop after rolling a mile down the runway");
+        }
     }
 }

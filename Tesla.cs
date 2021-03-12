@@ -15,5 +15,10 @@ namespace VehicleCustomization
             Console.WriteLine("Zoooooom! Tesssllllaaaa!");
         }
 
+        public override void Stop()
+        {
+            Console.WriteLine("The Tesla gently rolls to a stop after cutting off a policeman.");
+        }
+
     }
 }

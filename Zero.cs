@@ -14,5 +14,12 @@ namespace VehicleCustomization
             Console.Write($"The {MainColor} Zero drives past. ");
             Console.WriteLine("Zoooooom! Zeeerrrooooo!");
         }
+
+        public override void Turn(string direction)
+        {
+            Console.WriteLine($"The {MainColor} Zero turns {direction} and heads down the road.");
+        }
+
+
     }
 }

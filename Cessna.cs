@@ -2,13 +2,14 @@ using System;
 
 namespace VehicleCustomization
 {
-    public class Cessna : Vehicle
+    public class Cessna : Vehicle, IGas
     {
         public double FuelCapacity { get; set; }
+        public int CurrentTankPercentage { get; set; }
 
         public void RefuelTank()
         {
-            // method definition omitted
+            this.CurrentTankPercentage = 100;
         }
 
         public override void Drive()

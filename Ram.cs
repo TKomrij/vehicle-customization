@@ -2,13 +2,14 @@ using System;
 
 namespace VehicleCustomization
 {
-    public class Ram : Vehicle // Gas powered truck
+    public class Ram : Vehicle, IGas // Gas powered truck
     {
         public double FuelCapacity { get; set; }
+        public int CurrentTankPercentage { get; set; }
 
         public void RefuelTank()
         {
-            // method definition omitted
+            this.CurrentTankPercentage = 100;
         }
         public override void Drive()
         {
